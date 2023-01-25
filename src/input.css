@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.side-icon{
+    @apply fill-white w-7 h-7;
+}
+
+.tweet-icon{
+    @apply fill-blue-500 w-5 h-5;
+}
+
+.without-ring {
+    @apply focus:ring-0 focus:ring-offset-0;
+  }
