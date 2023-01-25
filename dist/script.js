@@ -8,30 +8,36 @@ let sidenav = $("#mobile-left-nav")
 let wrapper = $(".wrapper")
 $("#mobile-nav-open").click(()=>{
     if(!isOpen){
-        sidenav.removeClass("-translate-x-96 ")
-        sidenav.addClass("z-50 translate-x-0")
-        wrapper.addClass("brightness-75")
+        sidenav.removeClass("-translate-x-[35rem] ")
+        sidenav.addClass("z-[999999] translate-x-0")
+        wrapper.addClass("blur-sm")
         isOpen = true
     }
 })
 
-$("#mobile-nav-close").click(()=>{
+$("#mobile-nav-close, #dismiss-side").click(()=>{
     if(isOpen){
-        sidenav.removeClass("z-50 translate-x-0")
-        wrapper.removeClass("brightness-75")
-        sidenav.addClass("-translate-x-96")
+        sidenav.removeClass("z-[999999] translate-x-0")
+        wrapper.removeClass("blur-sm")
+        sidenav.addClass("-translate-x-[35rem]")
         isOpen = false
     }
 })
 
-if(isOpen){
-    wrapper.click(()=>{
-        console.log("wtf")
-        if(isOpen){
-            sidenav.removeClass("z-50 translate-x-0")
-            wrapper.removeClass("brightness-75")
-            sidenav.addClass("-translate-x-96")
-            isOpen = false
+let topbar = $("#topbar")
+var prevScrollpos = window.pageYOffset;
+
+const navScroll =  () => {
+    var currentScrollPos = window.pageYOffset;
+    if (prevScrollpos > currentScrollPos) {
+        if(topbar.hasClass("-translate-y-12")){
+            $("#topbar").removeClass("-translate-y-12")
         }
-    })
+    } else {
+        if(!topbar.hasClass("-translate-y-12")){
+            $("#topbar").addClass("-translate-y-12")
+        }
+    }
+    prevScrollpos = currentScrollPos;
 }
+window.onscroll = navScroll
