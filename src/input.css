@@ -10,6 +10,10 @@
     @apply fill-blue-500 w-5 h-5;
 }
 
+.mobile-side-icon{
+    @apply fill-white w-6 h-6;
+}
+
 .without-ring {
     @apply focus:ring-0 focus:ring-offset-0;
   }
