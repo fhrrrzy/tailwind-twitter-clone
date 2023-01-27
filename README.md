@@ -9,7 +9,7 @@ Responsive too <3
 
 ### Installation
 
-1. Clone this git `https://github.com/fhrrrzy/tailwind-twitter-clone.git`
+1. Clone this git `git clone https://github.com/fhrrrzy/tailwind-twitter-clone.git`
 2. Open terminal and go inside the project directory `cd tailwind-twitter-clone`
 3. Install dependency `npm install`
 4. Open index.html file
