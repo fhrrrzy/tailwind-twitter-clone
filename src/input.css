@@ -7,7 +7,7 @@
 }
 
 .tweet-icon{
-    @apply fill-blue-500 w-5 h-5;
+    @apply fill-sky-500 w-5 h-5;
 }
 
 .mobile-side-icon{
