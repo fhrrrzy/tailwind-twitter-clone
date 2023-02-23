@@ -1,3 +1,5 @@
+/** @module MainScript */
+
 /**
  * this add height for every line on write tweet textarea
  * @param {*} element 
@@ -11,6 +13,7 @@ function textAreaAdjust(element) {
  * mobile nav flag
  */
 let isOpen = false
+
 
 let sidenav = $("#mobile-left-nav")
 let wrapper = $(".wrapper")
