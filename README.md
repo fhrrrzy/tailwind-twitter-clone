@@ -5,7 +5,8 @@ Responsive too <3
 
 ### Tech used
 - Language : HTML, CSS, JS
-- Framework : Tailwindcss, Jquery (my lazyass to write it in vanilla js)
+- Framework : Tailwindcss
+- Lib : Jquery (my lazyass to write it in vanilla js)
 
 ### Installation
 
