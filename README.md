@@ -4,8 +4,8 @@ Front page of twitter web made with tailwind, might not really look good but i'l
 Responsive too <3
 
 ### Tech used
-- Tailwindcss
-- Jquery (my lazyass to write it in vanilla js)
+- Language : HTML, CSS, JS
+- Framework : Tailwindcss, Jquery (my lazyass to write it in vanilla js)
 
 ### Installation
 
